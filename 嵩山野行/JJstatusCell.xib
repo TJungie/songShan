@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="362" id="KGk-i7-Jjw" customClass="JJstatusCell">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="362"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="361"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apw-yB-nO1" userLabel="位置、时间、地点">
+                        <rect key="frame" x="5" y="241" width="429" height="115"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Y9-vv-aUe" userLabel="位置">
+                                <rect key="frame" x="0.0" y="5" width="429" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-ez-kEd" userLabel="经度">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纬度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npj-oZ-AtA" userLabel="纬度">
+                                        <rect key="frame" x="143" y="0.0" width="143" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海拔" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEP-re-Xeg" userLabel="海拔">
+                                        <rect key="frame" x="286" y="0.0" width="143" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f8N-PO-GwC" userLabel="时间地点">
+                                <rect key="frame" x="0.0" y="77" width="429" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgF-W5-7AH" userLabel="时间">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jve-Gj-S6i" userLabel="地点">
+                                        <rect key="frame" x="215" y="0.0" width="214" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5Y9-vv-aUe" secondAttribute="bottom" multiplier="1.5" id="DN4-wu-AbT"/>
+                            <constraint firstAttribute="bottom" secondItem="f8N-PO-GwC" secondAttribute="bottom" id="SSk-hy-T5w"/>
+                            <constraint firstItem="5Y9-vv-aUe" firstAttribute="top" secondItem="Apw-yB-nO1" secondAttribute="top" constant="5" id="a6h-Wd-owJ"/>
+                            <constraint firstItem="f8N-PO-GwC" firstAttribute="top" secondItem="5Y9-vv-aUe" secondAttribute="bottom" id="bDr-rb-YXX"/>
+                            <constraint firstAttribute="trailing" secondItem="f8N-PO-GwC" secondAttribute="trailing" id="bc4-5E-Xri"/>
+                            <constraint firstItem="f8N-PO-GwC" firstAttribute="leading" secondItem="Apw-yB-nO1" secondAttribute="leading" id="ch8-OK-QAM"/>
+                            <constraint firstAttribute="trailing" secondItem="5Y9-vv-aUe" secondAttribute="trailing" id="vE9-5l-Qaf"/>
+                            <constraint firstItem="5Y9-vv-aUe" firstAttribute="leading" secondItem="Apw-yB-nO1" secondAttribute="leading" id="zoY-Vn-eat"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-96-CMX" userLabel="图片">
+                        <rect key="frame" x="5" y="5" width="429" height="236"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bes-96-CMX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1Bn-y5-mW7"/>
+                    <constraint firstAttribute="trailing" secondItem="Bes-96-CMX" secondAttribute="trailing" constant="5" id="Bae-xd-Cs0"/>
+                    <constraint firstAttribute="bottom" secondItem="Apw-yB-nO1" secondAttribute="top" multiplier="1.5" id="FRa-iy-IfL"/>
+                    <constraint firstAttribute="bottom" secondItem="Apw-yB-nO1" secondAttribute="bottom" constant="5" id="Qlb-L8-cnS"/>
+                    <constraint firstItem="Apw-yB-nO1" firstAttribute="top" secondItem="Bes-96-CMX" secondAttribute="bottom" id="R5Y-Pv-d0R"/>
+                    <constraint firstAttribute="trailing" secondItem="Apw-yB-nO1" secondAttribute="trailing" constant="5" id="YaE-FR-Xjx"/>
+                    <constraint firstItem="Bes-96-CMX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zMy-zJ-c6K"/>
+                    <constraint firstItem="Apw-yB-nO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zd0-Et-8i3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shareAltitude" destination="MEP-re-Xeg" id="88i-CU-EHI"/>
+                <outlet property="shareImage" destination="Bes-96-CMX" id="e89-hc-8bt"/>
+                <outlet property="shareLatitude" destination="Npj-oZ-AtA" id="Pom-Q9-lj6"/>
+                <outlet property="shareLocationLabel" destination="Jve-Gj-S6i" id="NFB-uN-tgQ"/>
+                <outlet property="shareLongitude" destination="I6C-ez-kEd" id="sBg-fJ-DB7"/>
+                <outlet property="shareTimeLabel" destination="xgF-W5-7AH" id="dfX-oO-ifB"/>
+            </connections>
+            <point key="canvasLocation" x="454.5" y="280"/>
+        </tableViewCell>
+    </objects>
+</document>
